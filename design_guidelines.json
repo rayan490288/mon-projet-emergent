@@ -1,0 +1,172 @@
+{
+  "identity": {
+    "name": "Brevet AI",
+    "persona": "E1 - The Anti-AI Designer",
+    "tone": "Encouraging, Smart, Future-Forward, Academic but Cool",
+    "target_audience": "French Middle School Students (3ème), 14-15 years old"
+  },
+  "design_system": {
+    "typography": {
+      "font_family_heading": "Outfit, sans-serif",
+      "font_family_body": "Public Sans, sans-serif",
+      "scale": {
+        "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold",
+        "body": "text-base leading-relaxed",
+        "small": "text-sm font-medium tracking-wide uppercase"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Public+Sans:wght@300;400;500;700&display=swap');"
+      ]
+    },
+    "colors": {
+      "mode": "system",
+      "palette": {
+        "light": {
+          "background": "#F8F9FA",
+          "foreground": "#0F172A",
+          "card": "#FFFFFF",
+          "card_foreground": "#0F172A",
+          "primary": "#4F46E5",
+          "primary_foreground": "#FFFFFF",
+          "secondary": "#E0E7FF",
+          "secondary_foreground": "#3730A3",
+          "accent": "#8B5CF6",
+          "accent_foreground": "#FFFFFF",
+          "destructive": "#EF4444",
+          "border": "#E2E8F0",
+          "input": "#F1F5F9",
+          "ring": "#4F46E5"
+        },
+        "dark": {
+          "background": "#09090B",
+          "foreground": "#F8FAFC",
+          "card": "#18181B",
+          "card_foreground": "#F8FAFC",
+          "primary": "#818CF8",
+          "primary_foreground": "#0F172A",
+          "secondary": "#1E1B4B",
+          "secondary_foreground": "#C7D2FE",
+          "accent": "#A78BFA",
+          "accent_foreground": "#FFFFFF",
+          "destructive": "#7F1D1D",
+          "border": "#27272A",
+          "input": "#27272A",
+          "ring": "#818CF8"
+        }
+      },
+      "gradients": {
+        "hero": "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
+        "card_hover": "hover:bg-gradient-to-br hover:from-white/5 hover:to-white/10"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-8 md:gap-16",
+      "element_gap": "gap-4"
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "button": "rounded-full",
+      "card": "rounded-2xl"
+    },
+    "shadows": {
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+      "glow": "shadow-[0_0_20px_rgba(79,70,229,0.3)]"
+    }
+  },
+  "layout_strategies": {
+    "dashboard": {
+      "type": "Bento Grid",
+      "grid_class": "grid grid-cols-1 md:grid-cols-4 gap-6",
+      "areas": {
+        "welcome": "col-span-1 md:col-span-2 row-span-1",
+        "stats": "col-span-1 md:col-span-2 row-span-1",
+        "subjects": "col-span-1 md:col-span-4 row-span-2",
+        "recent": "col-span-1 md:col-span-2 row-span-2"
+      }
+    },
+    "subject_view": {
+      "type": "Control Room",
+      "grid_class": "grid grid-cols-1 lg:grid-cols-12 gap-6",
+      "areas": {
+        "sidebar": "lg:col-span-3",
+        "main_content": "lg:col-span-9"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-full font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-11 px-8 rounded-full font-medium transition-all",
+      "ghost": "hover:bg-accent/10 hover:text-accent h-11 px-6 rounded-full font-medium transition-colors"
+    },
+    "cards": {
+      "base": "bg-card text-card-foreground border border-border/50 shadow-card hover:shadow-hover transition-all duration-300 rounded-2xl overflow-hidden",
+      "glass": "bg-white/10 dark:bg-black/20 backdrop-blur-xl border border-white/20 shadow-lg",
+      "interactive": "cursor-pointer hover:-translate-y-1 hover:border-primary/50 group"
+    },
+    "inputs": {
+      "base": "bg-input/50 border-transparent focus:border-primary focus:ring-2 focus:ring-primary/20 h-12 rounded-xl transition-all"
+    }
+  },
+  "assets": {
+    "images": {
+      "landing_hero": {
+        "url": "https://images.pexels.com/photos/6146978/pexels-photo-6146978.jpeg",
+        "alt": "Students studying together",
+        "usage": "Hero section background or main visual"
+      },
+      "subject_math": {
+        "url": "https://images.pexels.com/photos/1198828/pexels-photo-1198828.jpeg",
+        "alt": "Abstract Geometry",
+        "usage": "Mathematics subject card background"
+      },
+      "subject_french": {
+        "url": "https://images.pexels.com/photos/2457284/pexels-photo-2457284.jpeg",
+        "alt": "Abstract Art",
+        "usage": "French Literature subject card background"
+      },
+      "subject_science": {
+        "url": "https://images.pexels.com/photos/8499491/pexels-photo-8499491.jpeg",
+        "alt": "Science Lab",
+        "usage": "Physics/Chemistry subject card background"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_set": ["BookOpen", "Calculator", "FlaskConical", "Globe", "Cpu", "Languages", "History", "BrainCircuit"]
+    }
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 },
+      "transition": { "duration": 0.4, "ease": "easeOut" }
+    },
+    "hover_scale": {
+      "whileHover": { "scale": 1.02 },
+      "whileTap": { "scale": 0.98 }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'Outfit' for all headings and 'Public Sans' for body text. Import them in index.css.",
+    "Implement the 'Bento Grid' layout for the main dashboard.",
+    "Use the provided Pexels images for the landing page and subject cards. Do not use placeholders.",
+    "Ensure all interactive elements have 'data-testid' attributes.",
+    "Use 'lucide-react' for icons.",
+    "For the 'Brevet Method' mode, use the 'Glass' card style to make it feel special.",
+    "Ensure Dark Mode is manually toggleable but respects system preference by default.",
+    "Do not use 'Inter' font.",
+    "Do not use teal colors (#1B93A4) for the dashboard.",
+    "Use 'sonner' for toast notifications.",
+    "Customize Shadcn components to match the 'rounded-2xl' and 'rounded-full' aesthetic."
+  ],
+  "universal_guidelines": {
+    "do_not_use": ["Generic gradients", "Default Shadcn styling", "Inter font", "Teal colors"],
+    "must_do": ["Add micro-interactions", "Use generous spacing (p-8+)", "Ensure high contrast", "Use named exports for components"]
+  }
+}
